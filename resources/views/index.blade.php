@@ -182,6 +182,7 @@
 		</div>
 
 		<div class="row courses-r-margin-bottom">
+        @if(isset($eventss)
 			@foreach ($eventss as $events)
             <div class="col-sm-4 single-courses-box">
 			    <div class="single-courses">
@@ -198,6 +199,7 @@
 			</div>
 
             @endforeach
+        @endif
 
         </div><!--End .row-->
 
@@ -222,6 +224,7 @@
 				<div class="news-item-box">
 					<h3 class="section-h-medium">Latest News</h3>
 					<div class="single-item">
+                    @if(isset($newss)
 
                         @foreach ($newss as $news)
                            <div class="news-content">
@@ -244,6 +247,7 @@
                             </div>
                         </div>
                         @endforeach
+                    @endif
 
 
 
